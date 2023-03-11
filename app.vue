@@ -1,9 +1,9 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <Footer :name="config.public.NAME"></Footer>
   </div>
 </template>
 
 <script setup>
-const runtimeConfig = useRuntimeConfig();
+const config = useRuntimeConfig();
 </script>
