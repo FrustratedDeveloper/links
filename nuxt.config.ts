@@ -4,5 +4,11 @@ export default defineNuxtConfig({
 		public: {
 			NAME: 'Your name here'
 		}
-	}
-})
+	},
+	modules: [
+		// With options
+		['@nuxtjs/eslint-module', {
+			lintOnStart: false,
+		}]
+	]
+});
